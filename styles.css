@@ -59,9 +59,29 @@ a {
 .rating {
   margin-top: 30px;
   color: white;
-  opacity: 0.5;
   font-size: 40px;
   font-weight: 700;
+}
+
+.subtitle {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  position: relative;
+  right: 190px;
+  padding: 0;
+  margin-bottom: -400px;
+}
+
+.subtitle p {
+  opacity: 0.7;
+}
+
+.tower {
+  position: relative;
+  width: 400px;
+  bottom: 245px;
+  left: 150px;
 }
 
 .subsubtitle,
@@ -69,9 +89,29 @@ a {
   font-size: 32px;
 }
 
+.subsubtitle {
+  margin-top: 15px;
+  opacity: 0.7;
+};
+
 .rating {
   margin-top: 40px;
   opacity: 1;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+  position: relative;
+  left: 40px;
+}
+
+.arrow {
+  position: relative;
+  bottom: 110px;
+  left: 390px;
+  width: 80px;
+  transform: rotate(220deg);
+  filter: invert(1);
 }
 
 .service-container {
@@ -83,7 +123,8 @@ a {
   border-radius: 25px;
   position: relative;
   bottom: 180px;
-  box-shadow: 0px 10px 20px rgba(0,0,0,1);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 1);
+  margin-bottom: 0px;
 }
 
 .service-container-left {
@@ -92,7 +133,6 @@ a {
   padding-left: 80px;
   display: flex;
   flex-direction: column;
-
 }
 
 .service-heading {
@@ -109,22 +149,22 @@ a {
 }
 
 .service-container-bot-left {
-    font-size: 32px;
-    font-weight: 700;
-    color: white;
-    margin-top: 60px;
-    row-gap: 10px; 
-    padding-bottom: 60px;
+  font-size: 32px;
+  font-weight: 700;
+  color: white;
+  margin-top: 60px;
+  row-gap: 10px;
+  padding-bottom: 60px;
 }
 
 .service-container-bot-left .line {
-    display: flex;
-    justify-content: space-between; 
-    text-align: left;
+  display: flex;
+  justify-content: space-between;
+  text-align: left;
 }
 
 .service-container-bot-left .single {
-    text-align: left; 
+  text-align: left;
 }
 
 .service-container-right {
@@ -132,4 +172,50 @@ a {
   display: flex;
   padding-top: 60px;
   padding-left: 100px;
+}
+
+.review-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, auto);   
+  gap: 40px; 
+  padding: 20px; 
+  margin-top: 0px;
+}
+
+.review-item {
+  position: relative;
+  bottom: 100px;
+  background-color: #ffffff; 
+  padding: 45px;            
+  border: 1px solid #ddd;    
+  border-radius: 20px;      
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+  text-align: start;        /* Centered text */
+  height: 300px;
+  width: 350px;
+}
+
+.review-item .name {
+  font-size: 21px;
+}
+
+.review-item .job {
+  font-size: 16px;
+  margin-top: 5px;
+}
+
+.review-item .star-rating {
+  font-size: 16px;
+  margin-top: 15px;
+}
+
+.review-item .review-text {
+  font-size: 16px;
+  margin-top: 15px;
+}
+
+.review-item .date {
+  font-size: 16px;
+  margin-top: 15px;
 }
