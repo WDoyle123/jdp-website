@@ -92,7 +92,7 @@ a {
 .subsubtitle {
   margin-top: 15px;
   opacity: 0.7;
-};
+}
 
 .rating {
   margin-top: 40px;
@@ -182,21 +182,22 @@ a {
 .review-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, auto);   
-  gap: 40px; 
-  padding: 20px; 
+  grid-template-rows: repeat(2, auto);
+  gap: 40px;
+  padding: 20px;
   margin-top: 0px;
 }
 
 .review-item {
   position: relative;
   bottom: 100px;
-  background-color: #ffffff; 
-  padding: 45px;            
-  border: 1px solid #ddd;    
-  border-radius: 20px;      
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
-  text-align: start;        /* Centered text */
+  background-color: #ffffff;
+  padding: 45px;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: start;
+  /* Centered text */
   height: 300px;
   width: 350px;
 }
@@ -223,4 +224,82 @@ a {
 .review-item .date {
   font-size: 16px;
   margin-top: 15px;
+}
+
+.contact-container {
+  background-color: #004225;
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  max-width: 1200px;
+  border-radius: 25px;
+  margin: 60px auto;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
+  position: relative;
+  bottom: 80px;
+  padding-bottom: 15px;
+}
+
+.contact-container .contact-title {
+  font-size: 40px;
+  font-weight: 700;
+  color: white;
+  padding: 60px 80px 10px 80px;
+}
+
+.contact-container .contact-subtitle {
+  font-size: 21px;
+  font-weight: 700;
+  color: white;
+  padding: 10px 80px;
+  width: calc(100% - 160px);
+}
+
+.contact-container .contact-mid-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 20px 80px;
+}
+
+.contact-container .contact-left {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-container .contact-middle {
+  font-size: 24px;
+  font-weight: 500;
+  color: white;
+  margin-top: 20px;
+}
+
+.contact-container .contact-email {
+  font-size: 24px;
+  font-weight: 500;
+  color: white;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.contact-container .contact-right {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-container .contact-button {
+  max-width: 100%;
+  border-radius: 10px;
+  font-size: 32px;
+  padding: 20px;
+  background-color: #00321c;
+  color: white;
+  border: none;
+}
+
+.contact-button:hover {
+  opacity: 0.8;
 }
