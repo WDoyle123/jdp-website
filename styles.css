@@ -1,15 +1,22 @@
+/* Reset and Global Styles */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: REM;
+  font-family: "REM", sans-serif;
   line-height: 1;
+}
+
+html,
+body {
+  width: 100%;
+  overflow-x: hidden;
 }
 
 body {
   background-color: #d9d9d9;
-  flex-direction: column;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -18,17 +25,21 @@ body {
   background-color: #004225;
   height: 700px;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
 }
 
 nav {
   display: flex;
-  justify-content: end;
-  padding-top: 50px;
-  padding-right: 40px;
+  justify-content: flex-end;
+  padding: 50px 40px 0 0;
+  width: 100%;
 }
 
 ul {
-  list-style-type: none;
+  list-style: none;
   display: flex;
 }
 
@@ -59,31 +70,29 @@ a {
 .rating {
   margin-top: 30px;
   color: white;
-  font-size: 40px;
   font-weight: 700;
 }
 
 .subtitle {
   display: flex;
-  flex-direction: row;
   justify-content: center;
-  position: relative;
-  right: 190px;
-  padding: 0;
-  margin-bottom: -400px;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
 .subtitle p {
   opacity: 0.7;
+  font-size: 40px;
 }
 
 .tower {
-  position: relative;
+  position: absolute;
   width: 400px;
-  bottom: 245px;
-  left: 150px;
+  margin-right: 950px;
+  margin-top: 40px;
 }
 
+/* Subtitles and Ratings */
 .subsubtitle,
 .rating {
   font-size: 32px;
@@ -96,22 +105,18 @@ a {
 
 .rating {
   margin-top: 40px;
-  opacity: 1;
   display: flex;
-  flex-direction: row;
-  width: 100%;
   justify-content: center;
-  position: relative;
-  left: 40px;
+  align-items: center;
 }
 
 .arrow {
-  position: relative;
-  bottom: 110px;
-  left: 25rem;
+  position: absolute;
   width: 80px;
-  transform: rotate(220deg);
+  transform: rotate(200deg);
   filter: invert(1);
+  margin-top: 300px;
+  margin-left: 900px;
 }
 
 .service-container {
@@ -121,18 +126,19 @@ a {
   width: 80%;
   max-width: 1200px;
   border-radius: 25px;
-  position: relative;
-  bottom: 180px;
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 1);
-  margin-bottom: 0px;
+  margin: -180px 0 60px 0;
+  flex-wrap: wrap;
+  z-index: 100;
 }
 
 .service-container-left {
+  width: 60%;
+  padding-left: 60px;
   padding-top: 60px;
-  width: 55%;
-  padding-left: 80px;
   display: flex;
   flex-direction: column;
+  padding-right: 25px;
 }
 
 .service-heading {
@@ -168,29 +174,27 @@ a {
 }
 
 .service-container-right {
-  width: 45%;
+  width: 40%;
   display: flex;
+  justify-content: center;
   align-items: center;
-  justify-content: end;
 }
 
 .service-container-right img {
   height: 90%;
-  margin-right: 50px;
 }
 
 .review-container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, auto);
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 40px;
   padding: 20px;
-  margin-top: 0px;
+  width: 80%;
+  max-width: 1200px;
+  margin-bottom: 60px;
 }
 
 .review-item {
-  position: relative;
-  bottom: 100px;
   background-color: #ffffff;
   padding: 45px;
   border: 1px solid #ddd;
@@ -198,7 +202,10 @@ a {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   text-align: start;
   height: 300px;
-  width: 350px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .review-item .name {
@@ -210,16 +217,8 @@ a {
   margin-top: 5px;
 }
 
-.review-item .star-rating {
-  font-size: 16px;
-  margin-top: 15px;
-}
-
-.review-item .review-text {
-  font-size: 16px;
-  margin-top: 15px;
-}
-
+.review-item .star-rating,
+.review-item .review-text,
 .review-item .date {
   font-size: 16px;
   margin-top: 15px;
@@ -234,8 +233,6 @@ a {
   border-radius: 25px;
   margin: 60px auto;
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
-  position: relative;
-  bottom: 80px;
   padding-bottom: 15px;
 }
 
@@ -243,31 +240,33 @@ a {
   font-size: 40px;
   font-weight: 700;
   color: white;
-  padding: 60px 80px 10px 80px;
+  padding: 60px 60px 10px 60px;
 }
 
 .contact-container .contact-subtitle {
   font-size: 21px;
   font-weight: 700;
   color: white;
-  padding: 10px 80px;
-  width: calc(100% - 160px);
+  padding: 10px 60px;
+  width: 100%;
 }
 
 .contact-container .contact-mid-container {
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 20px 80px;
+  padding: 20px 60px;
+  flex-wrap: wrap;
 }
 
 .contact-container .contact-left {
-  width: 60%;
+  flex: 1 1 60%;
   display: flex;
   flex-direction: column;
 }
 
-.contact-container .contact-middle {
+.contact-container .contact-middle,
+.contact-container .contact-email {
   font-size: 24px;
   font-weight: 500;
   color: white;
@@ -275,30 +274,89 @@ a {
 }
 
 .contact-container .contact-email {
-  font-size: 24px;
-  font-weight: 500;
-  color: white;
-  margin-top: 20px;
   margin-bottom: 20px;
 }
 
 .contact-container .contact-right {
-  width: 40%;
+  flex: 1 1 40%;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 20px;
 }
 
 .contact-container .contact-button {
-  max-width: 100%;
+  width: 100%;
+  max-width: 300px;
   border-radius: 10px;
   font-size: 32px;
   padding: 20px;
   background-color: #00321c;
   color: white;
   border: none;
+  cursor: pointer;
+  transition: opacity 0.2s;
 }
 
-.contact-button:hover {
+.contact-container .contact-button:hover {
   opacity: 0.8;
 }
+
+.job-container {
+  width: 80%;
+  max-width: 1200px; 
+  padding: 20px;
+}
+
+.job-nav {
+  display: flex; 
+  justify-content: center; 
+  gap: 0; 
+  white-space: nowrap; 
+}
+
+.job-nav-item:not(:last-child) {
+  border-right: none; 
+}
+
+.job-nav-item {
+  flex: 0 0 auto; 
+  text-align: center;
+  padding: 10px;
+  height: 150px;
+  width: 150px; 
+  background-color: white;
+  border: 1px solid black;
+  cursor: pointer;
+  transition: background-color 0.2s, color 0.2s;
+  box-sizing: border-box; 
+}
+
+.job-nav-item:hover {
+  background-color: #007541;
+  color: white;
+}
+
+.job-nav-img {
+  width: 50px;
+  height: 50px;
+  background-color: gray;
+  border-radius: 50%;
+  margin: 0 auto 10px auto;
+}
+
+.job-nav-title {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.job-content {
+  margin-top: 20px;
+  background-color: white;
+  padding: 20px;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin: 0 auto; 
+  margin-top: 30px;
+}
+
