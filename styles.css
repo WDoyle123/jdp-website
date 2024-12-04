@@ -381,6 +381,7 @@ a {
 
 h2 {
   font-weight: 700;
+  margin-bottom: 5px;
 }
 
 .payroll-left {
@@ -395,7 +396,6 @@ h2 {
 }
 
 .payroll-text p {
-
   margin-bottom: 15px;
 }
 
@@ -403,3 +403,20 @@ h2 {
   width: 40%;
   padding: 20px;
 }
+
+.tax-return-left {
+  width: 40%;
+  padding: 20px;
+}
+
+.tax-return-right {
+  width: 60%;
+  padding: 60px;
+  display: flex;
+  flex-direction: column;
+}
+
+.tax-return-text p {
+  margin-bottom: 15px;
+}
+
