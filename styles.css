@@ -304,32 +304,34 @@ a {
 
 .job-container {
   width: 80%;
-  max-width: 1200px; 
-  padding: 20px;
+  max-width: 1200px;
+  margin: 40px 0px;
 }
 
 .job-nav {
-  display: flex; 
-  justify-content: center; 
-  gap: 0; 
-  white-space: nowrap; 
+  display: flex;
+  justify-content: center;
+  gap: 0;
+  white-space: nowrap;
 }
 
 .job-nav-item:not(:last-child) {
-  border-right: none; 
+  border-right: none;
 }
 
 .job-nav-item {
-  flex: 0 0 auto; 
+  flex: 0 0 auto;
   text-align: center;
   padding: 10px;
   height: 150px;
-  width: 150px; 
+  width: 150px;
   background-color: white;
   border: 1px solid black;
   cursor: pointer;
-  transition: background-color 0.2s, color 0.2s;
-  box-sizing: border-box; 
+  transition:
+    background-color 0.2s,
+    color 0.2s;
+  box-sizing: border-box;
 }
 
 .job-nav-item:hover {
@@ -343,7 +345,7 @@ a {
 }
 
 .job-nav-item:hover .job-nav-img {
-  filter: invert(100%); 
+  filter: invert(100%);
 }
 
 .job-nav-img.active-img {
@@ -364,12 +366,40 @@ a {
 }
 
 .job-content {
-  margin-top: 20px;
   background-color: white;
-  padding: 20px;
   border: 1px solid black;
   border-radius: 5px;
-  margin: 0 auto; 
+  margin: 0 auto;
   margin-top: 30px;
+  display: flex;
+  max-width: 900px;
+  width: 80%;
+  height: 25rem;
+  align-items: center;
+  justify-content: center;
 }
 
+h2 {
+  font-weight: 700;
+}
+
+.payroll-left {
+  width: 60%;
+  padding: 60px;
+  display: flex;
+  flex-direction: column;
+}
+
+.payroll-heading {
+  margin-bottom: 20px;
+}
+
+.payroll-text p {
+
+  margin-bottom: 15px;
+}
+
+.payroll-right {
+  width: 40%;
+  padding: 20px;
+}
