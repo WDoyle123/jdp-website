@@ -22,13 +22,13 @@ body {
 
 .top-container {
   background-color: #004225;
-  height: 60vh;
+  height: 700px;
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   position: relative;
-  margin-bottom: 20vh;
+  margin-bottom: 400px;
 }
 
 nav {
