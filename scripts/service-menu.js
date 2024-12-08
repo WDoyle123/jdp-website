@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", function() {
   const content = document.getElementById("job-content");
 
   const jobSections = [
@@ -35,15 +35,12 @@ document.addEventListener("DOMContentLoaded", function () {
       id: "taxation",
       img: "taxation-img",
       content: `
-      <div class="tax-return-left">
-        <img src="static/tax-return.svg" alt="Payroll illustration" />
-      </div>
-      <div class="tax-return-right">
+      <div class="payroll-left">
         <div class="payroll-heading">
           <h2>Tax Returns</h2>
           <p>Simplify your tax obligations and stay compliant.</p>
         </div>
-        <div class="tax-return-text">
+        <div class="payroll-text">
           <p>
             Completing your tax return can be a time-consuming and complex process. 
             Our experienced team is here to take the stress out of managing your annual 
@@ -57,6 +54,9 @@ document.addEventListener("DOMContentLoaded", function () {
             deductions, helping you keep more of your hard-earned profits.
           </p>
         </div>
+      </div>
+      <div class="payroll-right">
+        <img src="static/tax-return.svg" alt="Payroll illustration" />
       </div>
     `,
     },
@@ -126,15 +126,12 @@ document.addEventListener("DOMContentLoaded", function () {
       id: "self-assessment",
       img: "self-assessment-img",
       content: `
-  <div class="tax-return-left">
-    <img src="static/self-assessment-man.svg" alt="Payroll illustration" />
-  </div>
-  <div class="tax-return-right">
+  <div class="payroll-left">
     <div class="payroll-heading">
     <h2>Tax Returns</h2>
     <p>Simplify your tax obligations and stay compliant.</p>
     </div>
-    <div class="tax-return-text">
+    <div class="payroll-text">
       <p>
         Completing your tax return can be a time-consuming and complex process. 
         Our experienced team is here to take the stress out of managing your annual 
@@ -147,8 +144,11 @@ document.addEventListener("DOMContentLoaded", function () {
         of UK tax regulations, we ensure that you claim all eligible allowances and 
         deductions, helping you keep more of your hard-earned profits.
       </p>
+    </div>
   </div>
-</div>
+  <div class="payroll-right">
+    <img src="static/self-assessment-man.svg" alt="Payroll illustration" />
+  </div>
 `,
     },
     {
