@@ -1,209 +1,291 @@
 <!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The John Doyle Partnership</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=REM:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preload" as="image" href="static/people.svg" />
+    <link rel="preload" as="image" href="static/tax-return.svg" />
+    <link rel="preload" as="image" href="static/bookkeeper.svg" />
+    <link rel="preload" as="image" href="static/vat-man.svg" />
+    <link rel="preload" as="image" href="static/self-assessment-man.svg" />
+    <link rel="preload" as="image" href="static/accounts-man.svg" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>The John Doyle Partnership</title>
-  <link rel="stylesheet" href="styles.css" />
-  <link href="https://fonts.googleapis.com/css2?family=REM:ital,wght@0,100..900;1,100..900&display=swap"
-    rel="stylesheet" />
-  <link rel="preload" as="image" href="static/people.svg" />
-  <link rel="preload" as="image" href="static/tax-return.svg" />
-  <link rel="preload" as="image" href="static/bookkeeper.svg" />
-  <link rel="preload" as="image" href="static/vat-man.svg" />
-  <link rel="preload" as="image" href="static/self-assessment-man.svg" />
-  <link rel="preload" as="image" href="static/accounts-man.svg" />
-</head>
+  <body>
+    <div id="top-container" class="top-container">
+      <nav>
+        <ul>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
 
-<body>
-  <div class="top-container">
-    <nav>
-      <ul>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Contact</a></li>
+      <img class="tower" src="static/tower.svg" />
+      <img class="arrow" src="static/arrow.svg" />
+      <div class="title-container">
+        <div class="title">
+          <p>The John Doyle</p>
+          <p>Partnership</p>
+        </div>
+        <div class="subtitle">
+          <p>Accountancy, Taxation and Payroll Services</p>
+        </div>
+        <div class="subsubtitle">
+          <p>Established in Portsmouth, 1974</p>
+        </div>
+        <div class="rating">
+          <p>Rated ⭐️⭐️⭐️⭐️⭐️ on Google Reviews</p>
+        </div>
+      </div>
+      <div id="service-container" class="container service-container">
+        <div class="service-container-left">
+          <div class="service-container-top-left">
+            <div class="service-heading">
+              You will save time using our specialist services.
+            </div>
+            <div class="service-subheading">
+              As a small business, we know that time equals money. Why wait? Get
+              started today.
+            </div>
+          </div>
+
+          <div class="service-container-bot-left">
+            <div class="line">
+              <div>Taxation</div>
+              <div>Payroll</div>
+              <div>Accountancy</div>
+            </div>
+            <div class="line">
+              <div>VAT</div>
+              <div>Bookkeeping</div>
+              <div>Pension</div>
+            </div>
+            <div class="single">
+              <div>Construction Industry Scheme</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="service-container-right">
+          <img src="static/service.svg" alt="Man" />
+        </div>
+      </div>
+    </div>
+
+    <div id='job-container' class="container job-container">
+      <div class="job-nav">
+        <div id="payroll" class="job-nav-item">
+          <img id="payroll-img" class="job-nav-img" src="static/pension.svg" />
+          <p class="job-nav-title">Payroll</p>
+        </div>
+        <div id="taxation" class="job-nav-item">
+          <img id="taxation-img" class="job-nav-img" src="static/payroll.svg" />
+          <p class="job-nav-title">Tax Returns</p>
+        </div>
+        <div id="bookkeeping" class="job-nav-item">
+          <img
+            id="bookkeeping-img"
+            class="job-nav-img"
+            src="static/bookkeeping.svg"
+          />
+          <p class="job-nav-title">Bookkeeping</p>
+        </div>
+        <div id="vat" class="job-nav-item">
+          <img id="vat-img" class="job-nav-img" src="static/vat.svg" />
+          <p class="job-nav-title">VAT Returns</p>
+        </div>
+        <div id="self-assessment" class="job-nav-item">
+          <img
+            id="self-assessment-img"
+            class="job-nav-img"
+            src="static/self-assessment.svg"
+          />
+          <p class="job-nav-title">Self Assessment</p>
+        </div>
+        <div id="accounts" class="job-nav-item">
+          <img
+            id="accounts-img"
+            class="job-nav-img"
+            src="static/accounts.svg"
+          />
+          <p class="job-nav-title">Accounts</p>
+        </div>
+      </div>
+      <div id="job-content" class="job-content">
+        <p>Select an item to view content here.</p>
+      </div>
+    </div>
+
+    <div id="contact-container" class="container contact-container">
+      <div class="contact-title">
+        Join us at The John Doyle Partnership Today.
+      </div>
+      <div class="contact-subtitle">
+        Become one of our many satisfied clients by contacting us with the
+        details below.
+      </div>
+      <div class="contact-mid-container">
+        <div class="contact-left">
+          <div class="contact-middle">
+            <p>Telephone: 023 9261 9999</p>
+            <p>Telephone: 023 9261 0450</p>
+          </div>
+          <div class="contact-email">
+            Email: info@thejohndoylepartnership.com
+          </div>
+        </div>
+        <div class="contact-right">
+          <button class="contact-button">Contact</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="certs-container" class="container certs-container">
+      <div class="certs-left">
+        <button id="left-button" class="hidden left-button cert-button">
+          &#10094;
+        </button>
+        <img id="aat" class="certs-img" src="/static/aat-logo.svg" />
+        <img id="ifa" class="hidden certs-img" src="/static/ifa-logo.svg" />
+        <img id="sage" class="hidden certs-img" src="/static/sage-logo.svg" />
+        <img id="xero" class="hidden certs-img" src="/static/xero-logo.svg" />
+        <button id="right-button" class="hidden right-button cert-button">
+          &#10095;
+        </button>
+      </div>
+      <div class="certs-right">
+        <div class="certs-title">Why Choose Us?</div>
+        <p>
+          We are proud to be registered with both the AAT and IFA. These
+          accreditations demonstrate our commitment to providing top-notch
+          accounting and financial services while adhering to professional
+          standards.
+        </p>
+        <p>
+          We use industry-leading software like Sage and Xero. These tools allow
+          us to efficiently manage accounts, automate routine tasks, and ensure
+          accuracy in financial reporting.
+        </p>
+        <p>
+          We deliver reliable and efficient financial services tailored to meet
+          your specific needs. Our team is dedicated to maintaining the highest
+          standards of service and expertise.
+        </p>
+      </div>
+    </div>
+
+    <div class="container review-container">
+      <div class="review-item">
+        <p class="name">Person Person</p>
+        <p class="job">Job Title</p>
+        <p class="star-rating">⭐️⭐️⭐️⭐️⭐️</p>
+        <p class="review-text">
+          Exceptional service! Professional, reliable, and always available to
+          answer questions. They make managing finances stress-free. Highly
+          recommend!
+        </p>
+        <p class="date">Date</p>
+      </div>
+      <div class="review-item">
+        <p class="name">Person Person</p>
+        <p class="job">Job Title</p>
+        <p class="star-rating">⭐️⭐️⭐️⭐️⭐️</p>
+        <p class="review-text">
+          Exceptional service! Professional, reliable, and always available to
+          answer questions. They make managing finances stress-free. Highly
+          recommend!
+        </p>
+        <p class="date">Date</p>
+      </div>
+      <div class="review-item">
+        <p class="name">Person Person</p>
+        <p class="job">Job Title</p>
+        <p class="star-rating">⭐️⭐️⭐️⭐️⭐️</p>
+        <p class="review-text">
+          Exceptional service! Professional, reliable, and always available to
+          answer questions. They make managing finances stress-free. Highly
+          recommend!
+        </p>
+        <p class="date">Date</p>
+      </div>
+      <div class="review-item">
+        <p class="name">Person Person</p>
+        <p class="job">Job Title</p>
+        <p class="star-rating">⭐️⭐️⭐️⭐️⭐️</p>
+        <p class="review-text">
+          Exceptional service! Professional, reliable, and always available to
+          answer questions. They make managing finances stress-free. Highly
+          recommend!
+        </p>
+        <p class="date">Date</p>
+      </div>
+      <div class="review-item">
+        <p class="name">Person Person</p>
+        <p class="job">Job Title</p>
+        <p class="star-rating">⭐️⭐️⭐️⭐️⭐️</p>
+        <p class="review-text">
+          Exceptional service! Professional, reliable, and always available to
+          answer questions. They make managing finances stress-free. Highly
+          recommend!
+        </p>
+        <p class="date">Date</p>
+      </div>
+      <div class="review-item">
+        <p class="name">Person Person</p>
+        <p class="job">Job Title</p>
+        <p class="star-rating">⭐️⭐️⭐️⭐️⭐️</p>
+        <p class="review-text">
+          Exceptional service! Professional, reliable, and always available to
+          answer questions. They make managing finances stress-free. Highly
+          recommend!
+        </p>
+        <p class="date">Date</p>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <ul class="social-icon">
+        <li class="social-icon__item">
+          <a class="social-icon__link" href="#">
+            <ion-icon name="logo-facebook"></ion-icon>
+          </a>
+        </li>
+        <li class="social-icon__item">
+          <a class="social-icon__link" href="#">
+            <ion-icon name="logo-linkedin"></ion-icon>
+          </a>
+        </li>
       </ul>
-    </nav>
+      <ul class="menu">
+        <li class="menu__item">
+          <a class="menu__link" href="#top-container">Home</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="#job-container">Services</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="#certs-container">About</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="#contact-container">Contact</a>
+        </li>
+      </ul>
+      <p>&copy;2024 The John Doyle Partnership | All Rights Reserved</p>
+      <p>Website designed and created by William E. Doyle</p>
+    </footer>
 
-    <img class="tower" src="static/tower.svg" />
-    <img class="arrow" src="static/arrow.svg" />
-    <div class="title-container">
-      <div class="title">
-        <p>The John Doyle</p>
-        <p>Partnership</p>
-      </div>
-      <div class="subtitle">
-        <p>Accountancy, Taxation and Payroll Services</p>
-      </div>
-      <div class="subsubtitle">
-        <p>Established in Portsmouth, 1974</p>
-      </div>
-      <div class="rating">
-        <p>Rated ⭐️⭐️⭐️⭐️⭐️ on Google Reviews</p>
-      </div>
-    </div>
-    <div class="container service-container">
-      <div class="service-container-left">
-        <div class="service-container-top-left">
-          <div class="service-heading">
-            You will save time using our specialist services.
-          </div>
-          <div class="service-subheading">
-            As a small business, we know that time equals money. Why wait? Get
-            started today.
-          </div>
-        </div>
-
-        <div class="service-container-bot-left">
-          <div class="line">
-            <div>Taxation</div>
-            <div>Payroll</div>
-            <div>Accountancy</div>
-          </div>
-          <div class="line">
-            <div>VAT</div>
-            <div>Bookkeeping</div>
-            <div>Pension</div>
-          </div>
-          <div class="single">
-            <div>Construction Industry Scheme</div>
-          </div>
-        </div>
-      </div>
-
-      <div class="service-container-right">
-        <img src="static/service.svg" alt="Man" />
-      </div>
-    </div>
-  </div>
-
-  <div class="container job-container">
-    <div class="job-nav">
-      <div id="payroll" class="job-nav-item">
-        <img id="payroll-img" class="job-nav-img" src="static/pension.svg" />
-        <p class="job-nav-title">Payroll</p>
-      </div>
-      <div id="taxation" class="job-nav-item">
-        <img id="taxation-img" class="job-nav-img" src="static/payroll.svg" />
-        <p class="job-nav-title">Tax Returns</p>
-      </div>
-      <div id="bookkeeping" class="job-nav-item">
-        <img id="bookkeeping-img" class="job-nav-img" src="static/bookkeeping.svg" />
-        <p class="job-nav-title">Bookkeeping</p>
-      </div>
-      <div id="vat" class="job-nav-item">
-        <img id="vat-img" class="job-nav-img" src="static/vat.svg" />
-        <p class="job-nav-title">VAT Returns</p>
-      </div>
-      <div id="self-assessment" class="job-nav-item">
-        <img id="self-assessment-img" class="job-nav-img" src="static/self-assessment.svg" />
-        <p class="job-nav-title">Self Assessment</p>
-      </div>
-      <div id="accounts" class="job-nav-item">
-        <img id="accounts-img" class="job-nav-img" src="static/accounts.svg" />
-        <p class="job-nav-title">Accounts</p>
-      </div>
-    </div>
-    <div id="job-content" class="job-content">
-      <p>Select an item to view content here.</p>
-    </div>
-  </div>
-
-  <div class="container contact-container">
-    <div class="contact-title">
-      Join us at The John Doyle Partnership Today.
-    </div>
-    <div class="contact-subtitle">
-      Become one of our many satisfied clients by contacting us with the
-      details below.
-    </div>
-    <div class="contact-mid-container">
-      <div class="contact-left">
-        <div class="contact-middle">
-          <p>Telephone: 023 9261 9999</p>
-          <p>Telephone: 023 9261 0450</p>
-        </div>
-        <div class="contact-email">
-          Email: info@thejohndoylepartnership.com
-        </div>
-      </div>
-      <div class="contact-right">
-        <button class="contact-button">Contact</button>
-      </div>
-    </div>
-  </div>
-
-  <div class="container review-container">
-    <div class="review-item">
-      <p class="name">Person Person</p>
-      <p class="job">Job Title</p>
-      <p class="star-rating">⭐️⭐️⭐️⭐️⭐️</p>
-      <p class="review-text">
-        Exceptional service! Professional, reliable, and always available to
-        answer questions. They make managing finances stress-free. Highly
-        recommend!
-      </p>
-      <p class="date">Date</p>
-    </div>
-    <div class="review-item">
-      <p class="name">Person Person</p>
-      <p class="job">Job Title</p>
-      <p class="star-rating">⭐️⭐️⭐️⭐️⭐️</p>
-      <p class="review-text">
-        Exceptional service! Professional, reliable, and always available to
-        answer questions. They make managing finances stress-free. Highly
-        recommend!
-      </p>
-      <p class="date">Date</p>
-    </div>
-    <div class="review-item">
-      <p class="name">Person Person</p>
-      <p class="job">Job Title</p>
-      <p class="star-rating">⭐️⭐️⭐️⭐️⭐️</p>
-      <p class="review-text">
-        Exceptional service! Professional, reliable, and always available to
-        answer questions. They make managing finances stress-free. Highly
-        recommend!
-      </p>
-      <p class="date">Date</p>
-    </div>
-    <div class="review-item">
-      <p class="name">Person Person</p>
-      <p class="job">Job Title</p>
-      <p class="star-rating">⭐️⭐️⭐️⭐️⭐️</p>
-      <p class="review-text">
-        Exceptional service! Professional, reliable, and always available to
-        answer questions. They make managing finances stress-free. Highly
-        recommend!
-      </p>
-      <p class="date">Date</p>
-    </div>
-    <div class="review-item">
-      <p class="name">Person Person</p>
-      <p class="job">Job Title</p>
-      <p class="star-rating">⭐️⭐️⭐️⭐️⭐️</p>
-      <p class="review-text">
-        Exceptional service! Professional, reliable, and always available to
-        answer questions. They make managing finances stress-free. Highly
-        recommend!
-      </p>
-      <p class="date">Date</p>
-    </div>
-    <div class="review-item">
-      <p class="name">Person Person</p>
-      <p class="job">Job Title</p>
-      <p class="star-rating">⭐️⭐️⭐️⭐️⭐️</p>
-      <p class="review-text">
-        Exceptional service! Professional, reliable, and always available to
-        answer questions. They make managing finances stress-free. Highly
-        recommend!
-      </p>
-      <p class="date">Date</p>
-    </div>
-  </div>
-
-  <script src="scripts/service-menu.js"></script>
-  <script src="scripts/container-fade.js"></script>
-</body>
-
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script src="scripts/service-menu.js"></script>
+    <script src="scripts/container-fade.js"></script>
+    <script src="scripts/img-switcher.js"></script>
+  </body>
 </html>
