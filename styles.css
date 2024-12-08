@@ -574,3 +574,17 @@ h2 {
   font-size: 1rem;
   font-weight: 300;
 }
+
+.clickable-link {
+  color: #007bff; 
+  text-decoration: underline;
+  font-weight: bold; 
+  transition: color 0.3s ease; 
+}
+
+.clickable-link:hover {
+  color: #0056b3; 
+  text-decoration: none; 
+  cursor: pointer;
+}
+
