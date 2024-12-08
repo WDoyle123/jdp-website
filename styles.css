@@ -23,7 +23,7 @@ body {
 
 .top-container {
   background-color: #004225;
-  height: clamp(500px, 50vh, 700px);
+  height: clamp(700px, 50vh, 700px);
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -230,7 +230,7 @@ a {
   width: 80%;
   height: auto;
   align-items: center;
-  gap: 30px; 
+  gap: 30px;
   padding: 30px;
 }
 
@@ -288,44 +288,43 @@ a {
 }
 
 .certs-container .certs-right .certs-title {
-  font-size: clamp(20px, 4vw, 28px); 
+  font-size: clamp(20px, 4vw, 28px);
   font-weight: 700;
   margin-bottom: 30px;
   margin-top: 20px;
-
 }
 
 .certs-container .certs-right p {
   margin-bottom: 30px;
-  font-size: clamp(14px, 2.5vw, 18px); 
+  font-size: clamp(14px, 2.5vw, 18px);
   line-height: 1.5;
 }
 
 @media (max-width: 768px) {
   .certs-container {
-    flex-direction: column; 
-    gap: 20px; 
-    text-align: center; 
-    padding: 20px; 
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+    padding: 20px;
   }
 
   .certs-container .certs-left {
-    width: 100%; 
+    width: 100%;
   }
 
   .certs-container .certs-right {
-    width: 100%; 
-    margin-right: 0; 
+    width: 100%;
+    margin-right: 0;
   }
 
   .certs-container img {
-    height: 200px; 
+    height: 200px;
     width: 200px;
-    margin: 0 auto; 
+    margin: 0 auto;
   }
 
   .certs-container .cert-button {
-    width: 40px; 
+    width: 40px;
     height: 40px;
     font-size: 1.2rem;
   }
@@ -402,7 +401,6 @@ a {
   align-items: center;
   justify-content: center;
   padding: 30px;
-
 }
 
 .payroll-left,
@@ -448,15 +446,24 @@ h2 {
   margin-bottom: 15px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 990px) {
+  .job-container {
+    margin-top: 400px;
+  }
+
   .job-nav {
-    justify-content: flex-start;
-    margin-top: -150px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0 auto;
+    justify-content: center;
+    padding: 10px 0;
+    margin-top: clamp(-350px, -100px, 100px);
   }
 
   .job-nav-item {
     height: 100px;
-    width: 100px;
+    width: 100%;
+    border: none;
   }
 
   .job-nav-img {
@@ -482,6 +489,10 @@ h2 {
     padding: 10px;
   }
 
+  .payroll-right {
+    max-width: 200px;
+  }
+
   h2 {
     font-size: 16px;
     text-align: center;
@@ -494,24 +505,30 @@ h2 {
   }
 }
 
+@media (max-width: 700px) {
+  .job-container {
+    margin-top: 200px;
+  }
+}
+
 .review-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
-  gap: 20px; 
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
   padding: 20px;
-  width: 90%; 
+  width: 90%;
   max-width: 1200px;
-  margin-bottom: 40px; 
+  margin-bottom: 40px;
 }
 
 .review-item {
   background-color: #ffffff;
-  padding: 30px; 
+  padding: 30px;
   border: 1px solid #ddd;
   border-radius: 20px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   text-align: start;
-  height: auto; 
+  height: auto;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -519,29 +536,29 @@ h2 {
 }
 
 .review-item .name {
-  font-size: clamp(18px, 3vw, 21px); 
+  font-size: clamp(18px, 3vw, 21px);
 }
 
 .review-item .job {
-  font-size: clamp(14px, 2.5vw, 16px); 
+  font-size: clamp(14px, 2.5vw, 16px);
   margin-top: 5px;
 }
 
 .review-item .star-rating,
 .review-item .review-text,
 .review-item .date {
-  font-size: clamp(14px, 2.5vw, 16px); 
-  margin-top: 10px; 
+  font-size: clamp(14px, 2.5vw, 16px);
+  margin-top: 10px;
 }
 
 @media (max-width: 768px) {
   .review-container {
-    width: 100%; 
-    gap: 15px; 
+    width: 100%;
+    gap: 15px;
   }
 
   .review-item {
-    padding: 20px; 
+    padding: 20px;
   }
 
   .review-item .name,
@@ -549,7 +566,7 @@ h2 {
   .review-item .star-rating,
   .review-item .review-text,
   .review-item .date {
-    text-align: center; 
+    text-align: center;
   }
 }
 
@@ -662,7 +679,6 @@ h2 {
   align-items: center;
   flex-direction: column;
   text-align: center;
-
 }
 
 .social-icon,
