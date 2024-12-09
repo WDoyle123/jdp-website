@@ -586,6 +586,7 @@ h2 {
   align-items: center;
   justify-content: center;
   padding: 30px;
+  transition: transform 0.5s ease-in-out;
 }
 
 .contact-title {
@@ -642,12 +643,85 @@ h2 {
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  transition: background-color 0.2s ease;
 }
 
 .contact-button:hover {
+  transform: scale(1.1);
+
+}
+
+.contact-form {
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 20px;
+  width: 100%;
+  max-width: 600px;
+  margin: 20px auto;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.form-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.form-description {
+  font-size: 16px;
+  margin-bottom: 20px;
+  color: #555;
+  text-align: center;
+}
+
+.contact-form label {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  display: block;
+  color: #333;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #007541;
+  outline: none;
+  box-shadow: 0 0 3px rgba(0, 117, 65, 0.5);
+}
+
+.contact-form button {
+  padding: 10px 20px;
+  font-size: 18px;
+  color: white;
+  background-color: #007541;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.contact-form button:hover {
   background-color: #004225;
 }
+
+.contact-form textarea {
+  height: 100px;
+  resize: none;
+}
+
+
 
 @media (max-width: 768px) {
   .contact-right {
