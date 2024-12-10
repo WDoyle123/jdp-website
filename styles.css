@@ -223,7 +223,7 @@ a {
   background-color: white;
   border: 1px solid black;
   border-radius: 5px;
-  margin: 30px auto 60px auto;
+  margin: 90px auto 60px auto;
   display: flex;
   flex-direction: row;
   max-width: 900px;
@@ -576,7 +576,7 @@ h2 {
   border: 1px solid black;
   border-radius: 5px;
   margin: 10px auto;
-  margin-top: 20px;
+  margin-top: 90px;
   display: flex;
   flex-wrap: wrap;
   max-width: 1200px;
