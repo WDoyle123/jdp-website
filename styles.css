@@ -163,18 +163,29 @@ a {
   font-weight: 700;
   color: white;
   margin-top: clamp(15px, 3vh, 60px);
-  row-gap: clamp(5px, 1.5vw, 10px);
   padding-bottom: clamp(15px, 4vh, 60px);
 }
 
-.service-container-bot-left .line {
-  display: flex;
-  justify-content: space-between;
-  text-align: left;
+.service-container-bot-left .service-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: clamp(5px, 1.5vw, 10px);
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: clamp(1rem, 2.5vw, 1.5rem);
 }
 
-.service-container-bot-left .single {
+.service-container-bot-left .service-list li {
+  padding: 0 0.5em;
+  margin-left: 0;
   text-align: left;
+  border-left: 2px solid white;
+  margin-bottom: 8px;
+}
+
+.service-container-bot-left .service-list li.span-all {
+  grid-column: span 3;
 }
 
 .service-container-right {
