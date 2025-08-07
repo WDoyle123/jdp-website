@@ -108,6 +108,7 @@ a {
   width: 400px;
   margin-right: 950px;
   margin-top: 145px;
+  z-index: 999;
 }
 
 .subsubtitle,
@@ -134,6 +135,7 @@ a {
   filter: invert(1);
   margin-top: 415px;
   margin-left: 860px;
+  z-index: 9999;
 }
 
 .service-container {
@@ -363,7 +365,7 @@ a {
   justify-content: center;
   gap: 0;
   white-space: nowrap;
-  overflow-x: auto;
+  overflow-x: none;
   padding: 10px;
 }
 
