@@ -80,6 +80,17 @@ a {
   font-weight: 700;
 }
 
+.underline {
+  text-decoration: underline;
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+
+.underline:hover {
+  transform: translateY(-5px);
+}
+
 .subtitle {
   display: flex;
   justify-content: center;
@@ -589,7 +600,7 @@ h2 {
   margin-top: 90px;
   display: flex;
   flex-wrap: wrap;
-  max-width: 1200px;
+  max-width: 900px;
   border-radius: 25px;
   width: 90%;
   height: auto;
@@ -653,6 +664,7 @@ h2 {
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  transition: transform 0.3s ease;
 }
 
 .contact-button:hover {
