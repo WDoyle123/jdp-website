@@ -180,10 +180,9 @@ a {
 }
 
 .service-container-bot-left .service-list {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  row-gap: clamp(5px, 1.5vw, 10px);
-  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
   padding: 0;
   margin: 0;
   font-size: clamp(1rem, 2.5vw, 1.5rem);
@@ -191,14 +190,9 @@ a {
 
 .service-container-bot-left .service-list li {
   padding: 0 0.5em;
-  margin-left: 0;
-  text-align: left;
-  border-left: 2px solid white;
+  margin-left: 0px;
+  text-align: start;
   margin-bottom: 8px;
-}
-
-.service-container-bot-left .service-list li.span-all {
-  grid-column: span 3;
 }
 
 .service-container-right {
@@ -219,6 +213,8 @@ a {
 @media (max-width: 768px) {
   .service-container {
     flex-direction: column;
+    justify-content: center;
+    text-align: center;
   }
 
   .service-container-left {
@@ -256,6 +252,8 @@ a {
   align-items: center;
   gap: 30px;
   padding: 30px;
+  margin-top: 0px;
+  margin-bottom: 110px;
 }
 
 .certs-container .certs-left {
@@ -357,7 +355,8 @@ a {
 .job-container {
   width: 80%;
   max-width: 1200px;
-  margin-top: 460px;
+  margin-top: 400px;
+  margin-bottom: 110px;
 }
 
 .job-nav {
@@ -542,7 +541,7 @@ h2 {
   padding: 20px;
   width: 90%;
   max-width: 1200px;
-  margin-bottom: 40px;
+  margin-bottom: 110px;
 }
 
 .review-item {
@@ -599,7 +598,8 @@ h2 {
   border: 1px solid black;
   border-radius: 5px;
   margin: 10px auto;
-  margin-top: 90px;
+  margin-top: 0px;
+  margin-bottom: 110px;
   display: flex;
   flex-wrap: wrap;
   max-width: 900px;
