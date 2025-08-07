@@ -34,7 +34,10 @@ document.addEventListener("DOMContentLoaded", function () {
   const disableScroll = () => {
     scrollPosition = window.pageYOffset;
     document.body.style.position = "fixed";
-    document.body.style.top = `-${scrollPosition}px`;
+    const rootFontSize = parseFloat(
+      getComputedStyle(document.documentElement).fontSize
+    );
+    document.body.style.top = `-${scrollPosition / rootFontSize}rem`;
     document.body.style.width = "100%";
   };
 

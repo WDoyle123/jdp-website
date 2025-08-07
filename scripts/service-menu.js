@@ -158,7 +158,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <div class="payroll-left">
     <div class="payroll-heading">
       <h2>Accounts</h2>
-      <p>Small Business Accounting</p>
+      <p>Small Business Accounting.</p>
     </div>
     <div class="payroll-text">
       <p>
