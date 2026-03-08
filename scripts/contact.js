@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", function() {
   const formContainer = document.createElement("div");
   formContainer.id = "contact-form-container";
   document.body.appendChild(formContainer);
@@ -8,17 +8,19 @@ document.addEventListener("DOMContentLoaded", function () {
   const iframeForm = `
     <div class="overlay" id="contact-overlay">
       <div class="iframe-container">
-        <button class="close-button" id="close-contact-form">&times;</button>
-        <iframe 
-          src="https://docs.google.com/forms/d/e/1FAIpQLScaqOcMiTqdOO-iA98AxlJDpw6kLrY59VoaKjNgkTW90Y7WAA/viewform?embedded=true" 
-          width="100%" 
-          height="100%" 
-          frameborder="0" 
-          marginheight="0" 
-          marginwidth="0"
-          title="Contact Form">
-          Loading…
-        </iframe>
+        <button class="close-button" id="close-contact-form" aria-label="Close contact form" title="Close">&times;</button>
+        <div class="iframe-clipper">
+          <iframe 
+            src="https://docs.google.com/forms/d/e/1FAIpQLSdr2z1GHrFOUD14aeT3sSA9pEd9x5YvOb6Kyx6zgirsfJWLkw/viewform?embedded=true" 
+            width="100%" 
+            height="100%" 
+            frameborder="0" 
+            marginheight="0" 
+            marginwidth="0"
+            title="Contact Form">
+            Loading…
+          </iframe>
+        </div>
       </div>
     </div>
   `;
@@ -32,18 +34,22 @@ document.addEventListener("DOMContentLoaded", function () {
   let scrollPosition = 0;
 
   const disableScroll = () => {
+    const scrollbarWidth = window.innerWidth - document.documentElement.clientWidth;
+    document.body.style.paddingRight = `${scrollbarWidth}px`;
     scrollPosition = window.pageYOffset;
     document.body.style.position = "fixed";
     const rootFontSize = parseFloat(
-      getComputedStyle(document.documentElement).fontSize
+      getComputedStyle(document.documentElement).fontSize,
     );
     document.body.style.top = `-${scrollPosition / rootFontSize}rem`;
     document.body.style.width = "100%";
   };
 
   const enableScroll = () => {
+    document.body.style.paddingRight = "";
     document.body.style.position = "";
     document.body.style.top = "";
+    document.body.style.width = "";
     window.scrollTo({
       top: scrollPosition,
       behavior: "instant",
@@ -64,13 +70,13 @@ document.addEventListener("DOMContentLoaded", function () {
   contactButton.addEventListener("click", showOverlay);
   closeButton.addEventListener("click", hideOverlay);
 
-  overlay.addEventListener("click", function (e) {
+  overlay.addEventListener("click", function(e) {
     if (e.target === overlay) {
       hideOverlay();
     }
   });
 
-  document.addEventListener("keydown", function (e) {
+  document.addEventListener("keydown", function(e) {
     if (e.key === "Escape" && overlay.style.display === "flex") {
       hideOverlay();
     }
